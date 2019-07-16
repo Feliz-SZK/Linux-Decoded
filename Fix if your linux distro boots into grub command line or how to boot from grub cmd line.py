@@ -120,15 +120,15 @@ root~ sudo grub-install /dev/sda
 
 GRUB-Identifier	  Hard Drive	    Partition	        Linux-Identifier
 
-(hd0)	            First		                                /dev/sda
+(hd0)	            First		                             /dev/sda
 
-(hd0,gpt1)           First	               First	              /dev/sda1
+(hd0,gpt1)           First	             First	           /dev/sda1
 
-(hd0,gpt2)           First	               Second	             /dev/sda2
+(hd0,gpt2)           First	             Second	           /dev/sda2
 
-(hd1)	            Second		                      /dev/sdb
+(hd1)	            Second		                    /dev/sdb
 
-(hd1,gpt2)           Second	     Second	             /dev/sdb2
+(hd1,gpt2)           Second	    Second	           /dev/sdb2
 
-(hd1,gpt5)           Second	     Fifth	             /dev/sdb5
+(hd1,gpt5)           Second	    Fifth	           /dev/sdb5
  
