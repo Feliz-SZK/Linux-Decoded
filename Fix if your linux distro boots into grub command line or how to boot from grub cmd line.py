@@ -1,17 +1,17 @@
 ## After a lot of research and personal experiences I've come with the perfect fix, You'll not gonna find it anywhere.
 ## for indentation I've chosen to use the python extension.
 
--- So if you blew up your grub you'll see something like this when boot
+.... So if you blew up your grub you'll see something like this when boot....
 
 grub>
 
--- let's fix it..........
+...... let's fix it..........
 
 -- Now type in .......
 
 grub>ls 
 
--- if your boot system is uefi(considering you've chosen all files in one partition while installation otherwise a lot of them) you'll see.....
+..... if your boot system is uefi(considering you've chosen all files in one partition while installation otherwise a lot of them) you'll see.....
 
 grub>(hd0) (hd0,gpt5) (hd0,gpt1)
 
