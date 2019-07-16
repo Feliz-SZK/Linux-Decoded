@@ -25,7 +25,7 @@ grub> (hd0) (hd0,msdos5) (hd0,msdos1)
  it's good else stay with me.......
 
 ....... So, let's start by checking(partitions can also be denoted by hd0,X   --X is your partion no let's say 
-for(hd0,msdos5) you could write hd0,5)----more details at the end of the tutorial.......
+for(hd0,msdos5) you could write hd0,5) .......more details at the end of the tutorial.......
 
 grub>ls (hd0,5)/
 
@@ -120,11 +120,11 @@ root~ sudo grub-install /dev/sda
 
 GRUB-Identifier	  Hard Drive	    Partition	        Linux-Identifier
 
-(hd0)	            First		                               /dev/sda
+(hd0)	            First		                                /dev/sda
 
-(hd0,gpt1)           First	              First	             /dev/sda1
+(hd0,gpt1)           First	               First	              /dev/sda1
 
-(hd0,gpt2)           First	              Second	             /dev/sda2
+(hd0,gpt2)           First	               Second	             /dev/sda2
 
 (hd1)	            Second		                      /dev/sdb
 
