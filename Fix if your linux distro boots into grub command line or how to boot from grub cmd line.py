@@ -32,7 +32,7 @@ lib64/ media/ mnt/ opt/ proc/ root/ run/ sbin/
 srv/ sys/ tmp/ usr/ var/ vmlinuz vmlinuz.old 
 initrd.img initrd.img.old"""""""  (let's see inside boot)
 
--- type in
+-- type in --
 
 grub>ls/(hd0,5)/boot/
 
