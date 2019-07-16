@@ -118,7 +118,7 @@ root~ sudo grub-install /dev/sda
 ....... Finally and most important never ever give up.......
 
 
-GRUB-Identifier	  Hard Drive	    Partition	       Linux-Identifier
+GRUB-Identifier	  Hard Drive	    Partition	        Linux-Identifier
 
 (hd0)	            First		                               /dev/sda
 
