@@ -34,36 +34,36 @@ lib64/ media/ mnt/ opt/ proc/ root/ run/ sbin/
 srv/ sys/ tmp/ usr/ var/ vmlinuz vmlinuz.old 
 initrd.img initrd.img.old"""""""  (let's see inside boot)
 
--- type in --
+....... type in .......
 
 grub>ls/(hd0,5)/boot/
 
 grub>  grub/ system.map... vmlinuz-4.19.37-parrot1-amd64... initrd.img.....     and so on  .....(if it's there then its ok other wise 
-you've to look inside(ls) the other directries. In my case the kernel files are inside (hd0,1).
+you've to look inside(ls) the other directries. In my case the kernel files are inside (hd0,1) .......
 
--- Now let's discuss the normal scenario in which the kernel files are inside boot
--- if your kernel files are in other partition scroll a little down and continue from the hint of stars*********
+....... Now let's discuss the normal scenario in which the kernel files are inside boot .......
+....... if your kernel files are in other partition scroll a little down and continue from the hint of stars .......
 
--- type in(Optional)
+....... type in(Optional) .......
 
 grub>set pager=1
 
--- Now select your root partition or your linux installation partition
+....... Now select your root partition or your linux installation partition .......
 
 grub>set root=(hd0,5)
 
--- Now it's time to load kernel which is inside boot directory. so the kernel file name starts 
-with vmlinuz i'm writing mine make sure you write yours
+....... Now it's time to load kernel which is inside boot directory. so the kernel file name starts 
+with vmlinuz i'm writing mine make sure you write yours .......
 
 grub>linux /boot/vmlinuz-4.19.37-parrot1-amd64 root=/dev/sda5
 
--- root part is optional but sometimes pc gets a kernel panic so it's better adding it.
+....... root part is optional but sometimes pc gets a kernel panic so it's better adding it .......
 
--- now its time to load the initrd image check the name with initrd.img and write it without mistake. I'm writing mine.
+....... now its time to load the initrd image check the name with initrd.img and write it without mistake. I'm writing mine .......
 
 grub> initrd /boot/initrd.img-4.19.37-parrot1-amd64
 
--- done now you can boot
+....... done now you can boot .......
 
 grub>boot
 
@@ -72,61 +72,63 @@ grub>boot
 *********************
 *********************
 
---Now if your kernel files are in other partition instead of linux partition/boot then you've to set that partition
-as root temporarily. other wise you can't load the kernel by just mentioning it's directory. Stay with me
+.......Now if your kernel files are in other partition instead of linux partition/boot then you've to set that partition
+as root temporarily. other wise you can't load the kernel by just mentioning it's directory. Stay with me.......
 
--- In my case my linux partition is (hd0,5) and my boot partition is (hd0,1) and my kernel files were inside 
-the (hd0,1) partition . So let's fix it.
+.......In my case my linux partition is (hd0,5) and my boot partition is (hd0,1) and my kernel files were inside 
+the (hd0,1) partition . So let's fix it.......
 
 grub>set pager=1  (optional)
 grub>set root=(hd0,1)
 
---Now it's time to load kernel which is inside it. so the kernel file name starts 
-with vmlinuz i'm writing mine make sure you write yours
+.......Now it's time to load kernel which is inside it. so the kernel file name starts 
+with vmlinuz i'm writing mine make sure you write yours.......
 
 grub>linux /vmlinuz-4.19.37-parrot1-amd64 root=/dev/sda1
 
---root part is optional but sometimes pc gets a kernel panic so it's better adding it.
+.......root part is optional but sometimes pc gets a kernel panic so it's better adding it.......
 
---now its time to load the initrd image check the name with initrd.img and write it without mistake. I'm writing mine.
+.......now its time to load the initrd image check the name with initrd.img and write it without mistake.
+        I'm writing mine.......
 
 grub> initrd /initrd.img-4.19.37-parrot1-amd64
 
---now let's change the root directory 
+.......now let's change the root directory....... 
 
 grub>set root=(hd0,5)
 
---you're done now let's boot
+....... you're done now let's boot .......
 
 grub>boot
 
---**** Important**** after the system boots follow this tho fix it permanently. fire up terminal and type 
+**** Important**** after the system boots follow this tho fix it permanently. fire up terminal and type .......
 
 root~ sudo update-grub
 
 root~ sudo fdisk -l
 
--- check the name of your hard drive
+....... check the name of your drive ......
 
--- finally type in 
+....... finally type in .......
 
 root~ sudo grub-install /dev/sda
 
-****Congrats you've fixed it.
+**** Congrats you've fixed it.......
 
--- Finally and most important never ever give up
+....... Finally and most important never ever give up.......
 
 
-GRUB      Identifier	  Hard Drive	  Partition	   Linux-Identifier
+GRUB-Identifier	  Hard Drive	    Partition	       Linux-Identifier
 
-(hd0)	       First		                                  /dev/sda
+(hd0)	            First		                               /dev/sda
 
-(hd0,gpt1)	 First	                   First	          /dev/sda1
+(hd0,gpt1)           First	              First	             /dev/sda1
 
-(hd0,gpt2)	 First	                   Second	          /dev/sda2
+(hd0,gpt2)           First	              Second	             /dev/sda2
 
-(hd1)	       Second		                                  /dev/sdb
+(hd1)	            Second		                      /dev/sdb
 
-(hd1,gpt2)	 Second	                   Second	          /dev/sdb2
+(hd1,gpt2)           Second	     Second	             /dev/sdb2
 
-(hd1,gpt5)	 Second	                   Fifth	          /dev/sdb5
+(hd1,gpt5)           Second	     Fifth	             /dev/sdb5
+ 
