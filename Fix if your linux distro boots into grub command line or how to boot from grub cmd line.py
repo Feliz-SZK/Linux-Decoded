@@ -1,29 +1,31 @@
 ## After a lot of research and personal experiences I've come with the perfect fix, You'll not gonna find it anywhere.
 ## for indentation I've chosen to use the python extension.
 
-.... So if you blew up your grub you'll see something like this when boot....
+....... So if you blew up your grub you'll see something like this when boot.......
 
 grub>
 
-...... let's fix it..........
+....... let's fix it.......
 
--- Now type in .......
+....... Now type in .......
 
 grub>ls 
 
-..... if your boot system is uefi(considering you've chosen all files in one partition while installation otherwise a lot of them) you'll see.....
+....... if your boot system is uefi(considering you've chosen all files in one partition while installation otherwise a lot of them) 
+         you'll see.......
 
 grub>(hd0) (hd0,gpt5) (hd0,gpt1)
 
--- or if your boot scheme is bios you'll see
+....... or if your boot scheme is bios you'll see .......
 
 grub> (hd0) (hd0,msdos5) (hd0,msdos1)
 
-so now we're gonna have to load the kernel and the initrd image, usually the kernel files lies in the boot folder inside of the root folder
-in my case it's (hd0,msdos5). So if you're kernel files are inside the root or the linux partition it's good else stay with me.
+....... so now we're gonna have to load the kernel and the initrd image, usually the kernel files lies in the boot folder inside 
+ of the root folder in my case it's (hd0,msdos5). So if you're kernel files are inside the root or the linux partition,
+ it's good else stay with me.......
 
--- So, let's start by checking(partitions can also be denoted by hd0,X   --X is your partion no let's say 
-for(hd0,msdos5) you could write hd0,5)----more details at the end of the tutorial...
+....... So, let's start by checking(partitions can also be denoted by hd0,X   --X is your partion no let's say 
+for(hd0,msdos5) you could write hd0,5)----more details at the end of the tutorial.......
 
 grub>ls (hd0,5)/
 
