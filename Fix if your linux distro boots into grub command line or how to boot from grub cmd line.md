@@ -131,7 +131,7 @@ sudo fdisk -l
 sudo grub-install /dev/sda
 sudo update-grub
 ```
-**Congrats you've fixed it....**
+****Congrats you've fixed it....****
 
 > Finally and most importantly, never ever give up and don't let the pain blind you.
   
