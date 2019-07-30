@@ -2,7 +2,7 @@
 
 **after chrooting inside mnt(chroot /mnt)**
 
-**open another terminal and type in **
+***open another terminal and type in***
 
 ```bash
 sudo cp /etc/resolv.conf /mnt/etc
