@@ -7,4 +7,4 @@
 
 **[3> Copy file from system to chrooted directory](https://github.com/Feliz-S/Linux-Decoded/blob/master/copy%20a%20file%20from%20system%20to%20chroot%20directory.MD)**
 
-**[4> Fix if your distro boots into initramfs prompt | Alert /dev/sda* doesn't exist. | parrot Os $.7 bug.](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/Fix%20if%20system%20boots%20into%20initramfs%20prompt.MD)**
+**[4> Fix if your distro boots into initramfs prompt | Alert /dev/sda* doesn't exist. | parrot Os 4.7 bug.](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/Fix%20if%20system%20boots%20into%20initramfs%20prompt.MD)**
