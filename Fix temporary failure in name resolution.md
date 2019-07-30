@@ -32,7 +32,7 @@ systemctl list-unit-files |grep Network
 So, It's better not to unamsk it. else installing `network-manager` will fix it.
 
 ## first we gotta access the internet from cmd.line. Type in.
-```
+```bash
 dhclient Your-Interface-Name
 ```
 `dhclient eth0` for example. if you're using wifi then follow 
