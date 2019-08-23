@@ -63,4 +63,4 @@ sudo apt-get -f install
 ```bash
 sudo reboot
 ```
-> You're done, Everything's fine now.
+> You're done, Everything's fine now
