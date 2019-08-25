@@ -9,4 +9,4 @@
 
 **[4> Fix if your distro boots into initramfs prompt --Alert /dev/sda* doesn't exist --parrot Os 4.7 bug.](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/Fix%20if%20system%20boots%20into%20initramfs%20prompt.MD)**
 
-**[5> Fix pigz: abort: write error on <stdout> (No space left on device)](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/Fix%20mkinitramfs%20failure%20cpio%20141%20pigz%2028.md)**
+**[5> Fix pigz: abort: write error on <stdout> (No space left on device).](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/Fix%20mkinitramfs%20failure%20cpio%20141%20pigz%2028.md)**
