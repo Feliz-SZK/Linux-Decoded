@@ -11,4 +11,4 @@
 
 **[5> Fix pigz: abort: write error on (stdout) (No space left on device).](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/Fix%20mkinitramfs%20failure%20cpio%20141%20pigz%2028.md)**
 
-**[6>Fix when when you can't switch to full screen in Manjaro or any arch distro in Vmware-Guest](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/Fix%20Resolution%20Issue%20on%20Manjaro(Vmware%20Guest).Md)**
+**[6>Fix when when you can't switch to full screen in Manjaro or any arch distro in Vmware.](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/Fix%20Resolution%20Issue%20on%20Manjaro(Vmware%20Guest).Md)**
