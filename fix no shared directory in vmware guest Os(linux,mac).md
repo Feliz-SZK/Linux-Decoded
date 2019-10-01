@@ -37,5 +37,5 @@ sudo /usr/bin/vmhgfs-fuse .host:/ /mnt/hgfs -o subtype=vmhgfs-fuse,allow_other
 
 ***Or edit the /etc/fstab and add***
 ``bash
-vmhgfs-fuse    /mnt/hgfs    fuse    defaults,allow_other    0    0
+vmhgfs-fuse      /mnt/hgfs      fuse      defaults,allow_other      0      0
 ``
