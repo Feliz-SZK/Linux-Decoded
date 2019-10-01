@@ -36,6 +36,6 @@ sudo /usr/bin/vmhgfs-fuse .host:/ /mnt/hgfs -o subtype=vmhgfs-fuse,allow_other
 ### So, this it, but if you reboot and it's gone the add any of the command at startup and everything's good to go.
 
 ***Or edit the /etc/fstab and add***
-``bash
+```bash
 vmhgfs-fuse      /mnt/hgfs      fuse      defaults,allow_other      0      0
-``
+```
