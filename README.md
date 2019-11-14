@@ -30,3 +30,15 @@
 **[6>Fix when when you can't switch to full screen in Manjaro or any arch distro in Vmware.](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/Fix%20Resolution%20Issue%20on%20Manjaro(Vmware%20Guest).Md)**
 
 **[7> Fix when you can't access the shared directory in Vmware Guest Os](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/fix%20no%20shared%20directory%20in%20vmware%20guest%20Os(linux%2Cmac).md)**
+
+
+
+ ## License & copyright
+ 
+ © Salim Zaved Karim
+ 
+ Licensed under the [MIT License](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/LICENSE).
+
+
+
+
