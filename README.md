@@ -33,12 +33,11 @@
 
 
 
-
- ## License & copyright
+## License & copyright
  
- © Salim Zaved Karim
+© Salim Zaved Karim
  
- Licensed under the [MIT License](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/LICENSE).
+Licensed under the [MIT License](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/LICENSE).
 
 
 
