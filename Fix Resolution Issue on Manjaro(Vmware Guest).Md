@@ -30,4 +30,12 @@ sudo systemctl enable vmtoolsd
 
 sudo systemctl start vmtoolsd
 ```
+
+**Now, for instance if you've rebooted from the login screen and the resolution is not adapting**
+**(Or even after starting the vmtoolsd service nothing happens only then)type in**
+
+```zsh
+sudo systemctl restart vmtoolsd
+```
+
 ### And done, You're in full resolution --Congratulations
