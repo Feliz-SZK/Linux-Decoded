@@ -2,7 +2,7 @@
 
 **So, this is a common bug in Kde**
 
-**Here, what you'll see is a scrollbar at the right of the destop**
+**Here, what you'll see is a scrollbar at the right of the Desktop**
 
 ***So, as you scroll; the folders and files will move along and on top of that annoyance you can't click upon the folders.***
 
