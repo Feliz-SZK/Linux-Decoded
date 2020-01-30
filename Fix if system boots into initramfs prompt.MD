@@ -1,9 +1,9 @@
-# fix initrams prompt during boot || Alert /dev/sda* doesn't exist! || parrotos 4.7 error
+# fix initrams prompt during boot || Alert /dev/sda* doesn't exist! || parrot-os 4.7 error
 
 ## *Note-* After digging for days I've come up with the reason behind this error and this isn't on the internet.
 **so what we have to do is to invoke the initramfs.**
 
-### This is a bug in parrot os 4.7 at the time I'm uploading this but anyone can face this error though it's quite rare. it happens cause the initrd image can not be loaded. 
+### This is a bug in parrot os 4.7 at the time I'm uploading this; but anyone can face this error even it's quite rare. it happens cause the initrd image can not be loaded. 
 
 ## boot into a live system and type in:
 ```bash
@@ -31,7 +31,7 @@ cd /boot
 ls
 ```
 ***if you find the linux image and the kernel files are inside(vmlinuz**, initrd.img etc.) then you're good to go***
-**if they are not inside then scrool and continue from the hint of hashes #####.**
+**if they are not inside then scroll-down and continue from the hint of hashes #####.**
 ```bash
 sudo update-initramfs -u 
 grub-install /dev/sda
