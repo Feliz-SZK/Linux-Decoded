@@ -31,6 +31,10 @@
 
 **[7> Fix when you can't access the shared directory in Vmware Guest Os](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/fix%20no%20shared%20directory%20in%20vmware%20guest%20Os(linux%2Cmac).md)**
 
+**[8> Fix annoying Scrollbar in kde Desktop(Folder View)](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/Fix%20Scrollbar%20in%20Kde%20Desktop(Folder%20View).md)**
+
+
+
 
 
 ## License & copyright
