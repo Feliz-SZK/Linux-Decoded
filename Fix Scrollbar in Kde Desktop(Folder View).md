@@ -16,7 +16,7 @@ systemsettings --> (under appreance)WorkspaceTheme--> Look and feel --> Check th
 
 **Do not delete the kde configs in the first place, the above method will fix it.**
 
-### Now if you don't know where the 'system settings is'
+### Now if you don't know where the 'system settings' is?
 
 ***open terminal and type-in***
 
