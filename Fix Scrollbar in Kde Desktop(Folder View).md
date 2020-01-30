@@ -1,8 +1,8 @@
 ## Fix annoying Scrollbar in Kde Desktop(Folder View)
 
-**This is a common bug in Kde**
+**This is a common bug in Kde.**
 
-**Here, what you'll see is a scrollbar at the right of the Desktop**
+**Here, what you'll see is a scrollbar at the right of the Desktop.**
 
 ***So, as you scroll; the folders and files will move along and on top of that annoyance you can't click upon the folders.***
 
@@ -24,4 +24,4 @@ systemsettings --> (under appreance)WorkspaceTheme--> Look and feel --> Check th
 systemsettings5
 ```
 
->Everything's Done and You're good to go.
+>Now, Everything's Done and You're good to go.
