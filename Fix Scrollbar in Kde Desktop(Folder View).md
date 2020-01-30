@@ -1,6 +1,6 @@
 ## Fix annoying Scrollbar in Kde Desktop(Folder View)
 
-**So, this is a common bug in Kde**
+**This is a common bug in Kde**
 
 **Here, what you'll see is a scrollbar at the right of the Desktop**
 
