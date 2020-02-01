@@ -13,7 +13,13 @@ Then Add:
 ```
 nameserver (your default gateway ip)
 ```
-# save and restar network manager by typing `service network-manager-restart`
+***If you don't know what your default gateway is type-in***
+
+```bash
+ip r | grep default
+```
+
+# save and restart network manager by typing `service network-manager restart`
 
 ## If your /etc/resolv.conf is lacking permissons then type in `chmod o+r /etc/resolv.conf` or delete that file and create a new one.
 
@@ -28,10 +34,10 @@ nameserver (your default gateway ip)
 ```bash
 systemctl list-unit-files |grep Network
 ```
-## if it's masked then trying to unmask will eventually remove the service from the `/etc/systemd/system directory.
-So, It's better not to unamsk it. else installing `network-manager` will fix it.
+## if NetworkManager.service is masked then unmasking it will eventually remove the service from the ``/etc/systemd/system`` directory.
+**So, It's better not to unamsk it. else installing ``network-manager`` will fix it.**
 
-## first we gotta access the internet from cmd.line. Type in.
+## first we gotta enable the internet access from terminal. Type in.
 ```bash
 dhclient Your-Interface-Name
 ```
@@ -44,7 +50,7 @@ then type in `dhclient wlan0`
 ```
 sudo apt install network-manager
 
-service restart network-manager
+service network-manager restart
 ```
 To install gui, `sudo apt install network-manager-gnome`. To open it type in
 `nm-connection-editor` from terminal.
