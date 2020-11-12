@@ -9,3 +9,7 @@
 ##### install ``gcc-9-base`` type-in,  ``sudo apt install gcc-9-base``
 
 ***This will fix it.***
+
+at end of the installation if you see something like ``couldn't configure libc6:amd64`` then just reinstall ``libc6``
+
+by typing, ``apt reinstall libc6``
