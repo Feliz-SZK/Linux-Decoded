@@ -53,7 +53,7 @@ sudo dpkg --purge image-name
 
 ***Done! now, type in***
 ```bash
-sudo dpkg--configure -a
+sudo dpkg --configure -a
 ```
 ***Or type in***
 ```bash
