@@ -13,3 +13,4 @@
 at end of the installation if you see something like ``couldn't configure libc6:amd64`` then just reinstall ``libc6``
 
 by typing, ``apt reinstall libc6``
+
