@@ -1,4 +1,4 @@
-### Well, this kind of unmet dependency occures mostly when you mess around with the sources list.
+### Well, this kind of unmet dependency occurs mostly when you mess around with the sources list.
 
 ***now, if you're running a stable release of distro and used the unstable sources to install somethin, please add that too. else, some other dependency may occur too.***
 
