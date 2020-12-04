@@ -1,4 +1,4 @@
-# Decode-Linux 
+# Linux-Decoded 
 ## Fixing Linux issues that can make you give up.
 
 ```ascii
@@ -33,7 +33,7 @@
 
 **[8> Fix annoying Scrollbar in kde Desktop(Folder View)](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/Fix%20Scrollbar%20in%20Kde%20Desktop(Folder%20View).md)**
 
-
+**[9> Fix unmet dependency_ibc6-dev breaks libgcc-9-dev](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/Fix%20libc6-dev%20Breaks%20libgcc-9-dev%20%3C%209.3.0-5%20but%209.2.1-8%20is%20to%20be%20installed.md)**
 
 
 
