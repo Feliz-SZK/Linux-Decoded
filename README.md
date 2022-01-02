@@ -35,7 +35,7 @@
 
 **[9> Fix unmet dependency_ibc6-dev breaks libgcc-9-dev](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/Fix%20libc6-dev%20Breaks%20libgcc-9-dev%20%3C%209.3.0-5%20but%209.2.1-8%20is%20to%20be%20installed.md)**
 
-**[9> Install go without going insane](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/How%20to%20install%20go%20without%20going%20insane.md)**
+**[10> Install go without going insane](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/How%20to%20install%20go%20without%20going%20insane.md)**
 
 
 
