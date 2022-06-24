@@ -19,8 +19,7 @@ sudo pacman -Su xf86-input-vmmouse xf86-video-vmware mesa gtk2 gtkmm
 **Now all we gotta do is to edit or create the Xorg's wrapper config** 
 
 ```bash
-
-sudo echo needs_root_rights=yes >>/etc/X11/Xwrapper.config
+echo needs_root_rights=yes | sudo tee -a /etc/X11/Xwrapper.config
 ```
 
 **Finally enable and start the** ``vmtoolsd.service``
