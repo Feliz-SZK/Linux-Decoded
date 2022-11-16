@@ -49,7 +49,7 @@ ii  linux-image-5.2.0-2parrot1-amd64             5.2.7-2parrot1                a
 ```bash
 sudo dpkg --purge image-name
 ```
-**ex-** ``sudo dpkg-purge linux-image-4.19.0-6parrot3-amd64``
+**ex-** ``sudo dpkg --purge linux-image-4.19.0-6parrot3-amd64``
 
 ***Done! now, type in***
 ```bash
