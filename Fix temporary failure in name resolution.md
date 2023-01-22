@@ -1,59 +1,86 @@
-# Fixing Temporary failure in name Resolution in linux
+# Fixing Temporary failure in name Resolution in Linux(Debian or Ubuntu based)
 
 
 # Step1:
 
-## Check ``` /etc/resolv.conf``` file is either empty or lacking permissons
+### Check if ``` /etc/resolv.conf``` file is empty or lacking permissions
 
-if it's empty the add 
+if it's empty: create the file, 
 ```bash
 sudo nano /etc/resolv.conf
 ```
-Then Add: 
-```
+Then add, 
+``` bash
 nameserver (your default gateway ip)
 ```
-***If you don't know what your default gateway is type-in***
+
+***If you don't know what your default gateway is type in,***
 
 ```bash
 ip r | grep default
 ```
 
-# save and restart network manager by typing `service network-manager restart`
+**Or, simply add ```nameserver 8.8.8.8``` and save the file**
 
-## If your /etc/resolv.conf is lacking permissons then type in `chmod o+r /etc/resolv.conf` or delete that file and create a new one.
+### Restart network manager,
 
-## still isuues follow step2
+
+```service network-manager restart``` for old **distros**
+
+```sudo service NetworkManager restart``` for new **distros**
+
+### If your /etc/resolv.conf is lacking permissions, type in `chmod o+r /etc/resolv.conf` or delete that file and create a new one.
+
+## Still having issues follow step2
 
 # Step2:
 
-## if your NetworkManager.service is masked.
+## Check if your NetworkManager.service is masked.
 
-## to check type in 
-
+**For new distros,**
 ```bash
-systemctl list-unit-files |grep Network
+systemctl list-unit-files | grep NetworkManager.service
 ```
-## if NetworkManager.service is masked then unmasking it will eventually remove the service from the ``/etc/systemd/system`` directory.
-**So, It's better not to unamsk it. else installing ``network-manager`` will fix it.**
 
-## first we gotta enable the internet access from terminal. Type in.
+**For old distros,**
+```bash
+systemctl list-unit-files | grep network-manager.service
+```
+
+**look for ```masked``` within the output**
+
+#### if NetworkManager.service is masked then unmasking it will eventually remove the service from the ``/etc/systemd/system`` directory.
+**So, It's better not to unmask it. else installing the ``network-manager`` package will fix it.**
+
+### First we gotta enable the internet access from terminal. Type in.
 ```bash
 dhclient Your-Interface-Name
 ```
-`dhclient eth0` for example. if you're using wifi then follow 
+**`dhclient eth0` for example. If you only have WIFI as a resource and don't have the GUI thing set up, follow**
 **[connect wifi from terminal](https://askubuntu.com/questions/294257/connect-to-wifi-network-through-ubuntu-terminal/294320#294320)**
 then type in `dhclient wlan0`
 
-## then install network manager and restart the service
+## Finally, install the ```network manager``` package and restart the service
 
-```
+For new **distros**,
+
+```bash
 sudo apt install network-manager
-
-service network-manager restart
+sudo service NetworkManager restart
+sudo service NetworkManager status
 ```
-To install gui, `sudo apt install network-manager-gnome`. To open it type in
+
+For old **distros,**
+
+```bash
+sudo apt install network-manager
+sudo service network-manager restart
+sudo service network-manager status
+```
+
+To install the GUI, `sudo apt install network-manager-gnome`. To open it type in
 `nm-connection-editor` from terminal.
-## and you're done. issue is fixed.
+
+## And, this should fix your issue :)
 
 

@@ -37,6 +37,8 @@
 
 **[10> Install go without going insane](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/How%20to%20install%20go%20without%20going%20insane.md)**
 
+**[11> Fix 'unsupported locale' in python or cli alternative for `dpkg-reconfigure locales`](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/%27unsupported%20locale%20setting%27%20in%20python%20or%20how%20to%20reconfigure%20your%20locale%20in%20linux.md)**
+
 
 
 ## License & copyright
