@@ -39,6 +39,8 @@
 
 **[11> Fix 'unsupported locale' in python or cli alternative for `dpkg-reconfigure locales`](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/%27unsupported%20locale%20setting%27%20in%20python%20or%20how%20to%20reconfigure%20your%20locale%20in%20linux.md)**
 
+**[12>Fix, BEWARE: your OS is not officially supported by Playwright](https://github.com/Feliz-SZK/Linux-Decoded/blob/master/Fix%2C%20%27BEWARE%3A%20your%20OS%20is%20not%20officially%20supported%20by%20Playwright%27.md)**
+
 
 
 ## License & copyright
