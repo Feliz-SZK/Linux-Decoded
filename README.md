@@ -39,9 +39,9 @@
 
 **[11> Fix, 'unsupported locale' in python or cli alternative for `dpkg-reconfigure locales`](Fix%20%27unsupported%20locale%20setting%27%20in%20python%20or%20how%20to%20reconfigure%20your%20locale%20in%20linux.md)**
 
-**[12> Fix, BEWARE: your OS is not officially supported by Playwright](Fix%2C%20BEWARE%3A%20your%20OS%20is%20not%20officially%20supported%20by%20Playwright.md)**
+**[12> Fix, BEWARE: your OS is not officially supported by Playwright](Fix%20BEWARE%20your%20OS%20is%20not%20officially%20supported%20by%20Playwright.md)**
 
-**[13> Fix, ModuleNotFoundError: No module named `'apt_pkg'`](Fix%2C%20ModuleNotFoundError%3A%20No%20module%20named%20%27apt_pkg%27.md)**
+**[13> Fix, ModuleNotFoundError: No module named `'apt_pkg'`](Fix%20ModuleNotFoundError%20No%20module%20named%20%27apt_pkg%27.md)**
 
 **[14> Fix, The `'certbot==0.40.0'` distribution was not found and is required by the application](The%20%27certbot%3D%3D0.40.0%27%20distribution%20was%20not%20found%20and%20is%20required%20by%20the%20application.md)**
 
