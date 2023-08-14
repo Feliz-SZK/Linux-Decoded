@@ -4,7 +4,7 @@ Let's understand the problem:
 
 When we install the python binding for apt (either python3-apt or python-apt), it places a shared object file within `/usr/lib/python3/dist-packages`. It might look like this:
 
-```console
+```bash
 apt_pkg.cpython-310-x86_64-linux-gnu.so
 ```
 
@@ -13,14 +13,14 @@ Here, `310` is my python version, maybe your one will say `36m` *python-3.6* or 
 Now, most of the times you'll see just one old obj file in that location. 
 Say you had python 3.10 and you upgraded to 3.11. But inside `/usr/lib/python3/dist-packages` you'll see
 
-```console
+```bash
     /usr/lib/python3/dist-packages ❯ ls -l | grep -i 'apt_pkg.c'
 .rw-r--r--  351k root 30 Nov  2022  apt_pkg.cpython-310-x86_64-linux-gnu.so
 ```
 
 If you've been using the OS for a while, you might find more than one file:
 
-```console
+```bash
     /usr/lib/python3/dist-packages ❯ ls -l | grep -i 'apt_pkg.c'
 .rw-r--r--  351k root 30 Nov  2022  apt_pkg.cpython-310-x86_64-linux-gnu.so
 .rw-r--r--  351k root 30 Nov  2022  apt_pkg.cpython-39-x86_64-linux-gnu.so
@@ -35,7 +35,7 @@ We could create a symlink from the existing old image to `apt_pkg.so`. But since
 
 doing,
 
-```console
+```bash
 sudo cp apt_pkg.cpython-310-x86_64-linux-gnu.so apt_pkg.so
 ```
 
@@ -49,13 +49,13 @@ select `apt_pkg.cpython-310-x86_64-linux-gnu.so`
 
 When copying, if you encounter something like
 
-```console
+```bash
 cp: failed to access '/usr/lib/python3/dist-packages/apt_pkg.so': Too many levels of symbolic links
 ```
 
 Simply unlink `apt_pkg.so` then run,
 
-```console
+```bash
 sudo cp apt_pkg.cpython-310-x86_64-linux-gnu.so apt_pkg.so
 ```
 

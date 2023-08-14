@@ -1,6 +1,6 @@
 So you upgraded your Python. "Now I can deploy my project," you thought. You got all the packages in place, including Certbot for SSL. Ready to generate the certs, you typed `sudo certbot -h`. And then...
 
-```console
+```bash
 
 pkg_resources.DistributionNotFound: The 'certbot==0.40.0' distribution was not found and is required by the application 
 
@@ -9,7 +9,7 @@ pkg_resources.DistributionNotFound: The 'certbot==0.40.0' distribution was not f
 **or**
 
 
-```console
+```bash
 
 from acme.magic_typing import Union  # pylint: disable=unused-import, no-name-in-module
      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -19,7 +19,7 @@ ModuleNotFoundError: No module named 'acme.magic_typing'
 
 **could be**
 
-```console
+```bash
 
 ModuleNotFoundError: No module named '_cffi_backend'
 
@@ -33,7 +33,7 @@ First, uninstall everything,
 
 let's start with the pip packages
 
-```console
+```bash
 sudo pip3 uninstall certbot certbot-nginx certbot-apache acme
 pip3 uninstall certbot certbot-nginx acme
 ````
@@ -42,7 +42,7 @@ Remove both the `sudo` and `user` packages.
 
 Then the package manager ones
 
-```console
+```bash
 sudo apt uninstall python3-certbot-nginx python3-certbot-apache python3-acme python3-certbot certbot
 ```
 
@@ -54,7 +54,7 @@ Alright, now we'll install certbot from snap
 
 In the terminal type in,
 
-```console
+```bash
 sudo snap install certbot --classic
 ````
 
@@ -62,7 +62,7 @@ Wait for the process to complete,
 
 then type in,
 
-```console
+```bash
 sudo certbot -h
 ```
 
@@ -70,14 +70,14 @@ And you should see the help section without any errors :)
 
 Also, if snap is not installed in your system then just do,
 
-```console
+```bash
 sudo apt update
 sudo apt install snapd
 ```
 
 And run,
 
-```console
+```bash
 sudo snap install certbot --classic
 ```
 
@@ -94,7 +94,7 @@ Fixing it and some little ones will get you on a clean state.
 
 This is because, in a typical system PATH chain, as shown below:
 
-```console
+```bash
     /usr/lib/python3/dist-packages ❯ echo $PATH$
 /home/kali/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/home/kali/.fzf/bin:/home/kali/.local/bin:/usr/lib/go/bin:/home/kali/go/bin:/snap/bin:/opt/waterfox$
 ```
