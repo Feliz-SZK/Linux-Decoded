@@ -15,14 +15,15 @@ E: Sub-process /usr/bin/dpkg returned an error code (1)
 ```
 ## It happens because there is no space left  in your boot partition
 
-## Let's Fix it, shall we!
+## Let's Fix it!
 
-*So what are we gonna do is to purge one of the old kernels.*
-*Type in*
+What we'll do is purge some old kernels.
+
+**In your terminal, type in**
 ```
 sudo uname -r
 ```
-**check the name of the kernel you're currently booted in**
+check the name of the kernel you're currently booted in
 
 **Now type in**
 ```
@@ -35,23 +36,27 @@ ii  linux-image-4.19.0-6parrot3-amd64            4.19.37-6parrot3              a
 rc  linux-image-4.19.37-parrot1-amd64            4.19.37-5parrot1              amd64        Linux 4.19.37 for 64-bit PCs
 ii  linux-image-5.2.0-2parrot1-amd64             5.2.7-2parrot1                amd64        Linux 5.2 for 64-bit PCs
 ```
-***so, we can delete the ones with the ``ii`` flag. don't delete the one with ``rc``.***
-**here in my case linux-image 5.2 is the one i'm having problem to install,**
-**So, we're not gonna delete the one which we're trying to install.**
 
-***Let's just face it***
+***The status breakdown***
 
-- ``rc``: means it has already been removed.
+- ``rc``: The package is already removed but some config files are still there.
 - ``ii``: means installed, eligible for removal.
 - ``iU``: DON’T REMOVE. It means not installed, but queued for install in apt
-    
-### Now, type in
+
+
+We can delete the ones with the ``ii`` flag. Remember never delete the ``iU``ones.
+Here in my case I'm having trouble installing **linux-image 5.2**;
+We'll not delete it cause we'd need it later. We'll delete the other old image(**linux-image-4.19.0-6parrot3-amd64**). You can get rid of all the linux images with the `rc` status but before doing it make sure you don't have any custom configs sitting in for that kernel.
+
+### Let's delete the old linux image
 ```bash
 sudo dpkg --purge image-name
 ```
 **ex-** ``sudo dpkg --purge linux-image-4.19.0-6parrot3-amd64``
 
-***Done! now, type in***
+You can remove all the old kernel images with an `ii` status if you need to. But keep a few around just in case. If the latest one acts up, you'll have an old reliable one to fall back on. Better safe than sorry, especially if you're not hurting for storage space!
+
+***Done! now, let's resume the new linux-image install***
 ```bash
 sudo dpkg --configure -a
 ```
@@ -59,8 +64,8 @@ sudo dpkg --configure -a
 ```bash
 sudo apt-get -f install
 ```
-***Finally, type in***
+***Finally, reboot***
 ```bash
-sudo reboot
+sudo reboot now
 ```
-> You're done, Everything's fine now.
+> You're done, Everything should be okay now :)
